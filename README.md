@@ -1,0 +1,1 @@
+Evanston Hacks is a group of Northwestern students passionate about sparking innovation in the local community. We empower middle and high school students by hosting hackathons that encourage creative problem-solving through technology. Our team also actively participates in hackathons, continuously honing our skills while inspiring the next generation of innovators.
