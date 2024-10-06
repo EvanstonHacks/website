@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Page</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Import model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <!-- <h1>Welcome to My Interactive Page</h1>
@@ -40,10 +42,9 @@
     
     <div class="information">
         <div class="media">
-            <video width="640" height="360" controls>
-                <source src="pictures/simulation.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>            
+            <!-- 3D Model -->
+            <model-viewer id="model" src="pictures/synthocean2.1.glb" auto-rotate camera-controls>
+            </model-viewer>
             <h2>2d simulation</h2>
             <p>text
             </p>
@@ -52,7 +53,7 @@
     <div class="information">
         <div class="media">
             <video width="640" height="360" controls>
-                <source src="pictures/3d_rec_no_moving.mp4" type="video/mp4">
+                <source src="pictures/Simulation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>            
             <h2>3d simulation</h2>
