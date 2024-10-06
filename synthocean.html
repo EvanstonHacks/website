@@ -12,7 +12,7 @@
     <!-- <h1>Welcome to My Interactive Page</h1>
     <button id="myButton">Click me</button>
     <p id="message"></p> -->
-    <script src="EVHacksJS.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
     <header>
         <div class="header">
             <div class="nav">
@@ -35,7 +35,16 @@
     <div class="information">
         <div class="media">          
             <h2>What is synthocean?</h2>
-            <p>
+            <p>Our planet is encased in ocean and has highly active volcanoes 
+                that spew out gaseous mixtures of carbon dioxide, methane, sulfur 
+                dioxide, hydrogen sulfides, and nitrogen oxides. Due to the abundant 
+                amounts of water on its surface and its relatively high concentration 
+                of greenhouse gases, our planet experiences high amounts of precipitation. 
+                Rain captures the gaseous compounds in the atmosphere and leaches phosphorous 
+                from the volcanic rocks, carrying many elements essential to life as it 
+                enters the oceans. Over the course of the planet's geologic history, various 
+                life forms have evolved from the most nascent molecular interactions that 
+                occurred within the chemical environment of its hydrosphere. 
             </p>
         </div>
     </div>
@@ -45,8 +54,30 @@
             <!-- 3D Model -->
             <model-viewer id="model" src="pictures/synthocean2.1.glb" auto-rotate camera-controls>
             </model-viewer>
-            <h2>2d simulation</h2>
-            <p>text
+            <h2>One piece of the puzzle</h2>
+            <p>This model shows the environment of the planet with a couple producers and 
+                consumers as well as decorative rocks that have luminescence.
+            </p>
+        </div>
+    </div>
+    <div class="information">
+        <div class="media">
+            <!-- 3D Model -->
+            <model-viewer id="model" src="pictures/producer.glb" auto-rotate camera-controls>
+            </model-viewer>
+            <h2>Producer: Octoflora</h2>
+            <p>Named after its 8 toes and its signature brightly colored sensors, the Octoflora 
+                is a nitrifying organism. It converts nitrogen dioxide to nitrogen trioxide in the 
+                presence of oxygen. 
+            </p>
+        </div>
+        <div class="media">
+            <!-- 3D Model -->
+            <model-viewer id="model" src="pictures/consumer.glb" auto-rotate camera-controls>
+            </model-viewer>
+            <h2>Consumer: Nauticella</h2>
+            <p>Named after its nautical habitet and how its long limbs are shaped and moved like flagella,
+                the Nauticella eats the Octoflora for energy.
             </p>
         </div>
     </div>
@@ -56,13 +87,13 @@
                 <source src="pictures/Simulation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>            
-            <h2>3d simulation</h2>
+            <h2>2d simulation</h2>
             <p>text
             </p>
         </div>
         <div class="media">
             <video width="640" height="360" controls>
-                <source src="pictures/3d_rec_moving.mp4" type="video/mp4">
+                <source src="pictures/3d_rec_no_moving.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>            
             <h2>3d simulation</h2>
@@ -73,20 +104,36 @@
     
     <div class="information">
         <div class="media">
-            <img src="pictures/H2SO4.png" alt="H2SO4">
+            <img src="pictures/H2SO4.png" alt="H2SO4" class="clickable">
             <h2>Sulfuric acid rain</h2>
-            <p>text
+            <p>Sulfur dioxide is spontaneously oxidized to sulfate as it is 
+                captured by water droplets in the presence of oxygen, forming sulfuric acid.
+                Sulfate can be used as a terminal electron acceptor in cell respiration.
             </p>
         </div>
         <div class="media">
-            <video width="640" height="360" controls>
-                <source src="pictures/moleculevid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>            
-            <h2>Some other reaction</h2>
-            <p>text
+            <img src="pictures/2NO2.png" alt="2NO2" class="clickable">
+            <h2>Nitrate</h2>
+            <p>Nitrite is consumed and converted into nitrate by nitrifying microbes.
+                Nitrate can be used as a terminal electron acceptor.
             </p>
         </div>
+        <div class="media">
+            <img src="pictures/HNO3+HNO2.png" alt="HNO3" class="clickable">
+            <h2>Water Droplets</h2>
+            <p>A disproportionation reaction occurs between nitrogen dioxide 
+                and water when it is captured by water droplets, forming nitrite and 
+                nitrate ions.
+            </p>
+        </div>
+        <div class="media">
+            <img src="pictures/Sulfate.png" alt="Sulfate" class="clickable">
+            <h2>Sulfate to Sulfide</h2>
+            <p>Sulfate-reducing microbes reduce sulfate to sulfide.
+                Sulfide can be used as terminal electron acceptor.
+            </p>
+        </div>
+        
     </div>
 
     <footer>

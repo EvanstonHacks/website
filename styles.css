@@ -170,12 +170,6 @@ model-viewer {
 }
 
 
-.information {
-    display: flex;
-    justify-content: space-around; /* Adjust spacing between the blocks */
-    padding: 20px; /* Padding around the entire team section */
-}
-
 .media {
     flex: 1; /* Allow each block to take equal space */
     margin: 0 15px; /* Margin between the blocks */
@@ -188,6 +182,32 @@ model-viewer {
     width: 100%; /* Make image responsive */
     max-width: 800px; /* Limit the size of the image */
     height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicate that the image is clickable */
+}
+
+.information {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between the blocks */
+    padding: 20px; /* Padding around the entire team section */
+}
+
+/* Fullscreen styles */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Optional: dark background */
+    z-index: 999; /* Higher than other elements */
+}
+
+.fullscreen img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Fit to height */
+    max-width: none; /* Disable max width */
+    margin: auto; /* Center the image */
+    display: block; /* Ensure it takes block space */
 }
 
 .media h2 {
