@@ -24,3 +24,22 @@ clickableImages.forEach((img) => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.toggle-details');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const detailedText = button.previousElementSibling;
+            
+            // Toggle visibility of the detailed description
+            if (detailedText.style.display === 'none') {
+                detailedText.style.display = 'block';
+                button.textContent = 'Less Detail'; // Change button text
+            } else {
+                detailedText.style.display = 'none';
+                button.textContent = 'More Detail'; // Revert button text
+            }
+        });
+    });
+});
